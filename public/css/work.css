@@ -1,0 +1,124 @@
+* {
+	font-family: 'Muli', sans-serif;
+
+}
+body {
+	background: linear-gradient(-90deg, #EEEEEE, white);
+}
+/* Navigation Bar */
+.navbar {
+	background-color:none;
+}
+.nav-item {
+	float:right;
+}
+.navbar-nav {
+	position: absolute;
+	right:0%;
+}
+h1 {
+	text-align: center;
+	margin-top: 3rem;
+	font-size: 4.5rem;
+}
+h2 {
+	color: white;
+	font-size: 3rem;
+	margin-left: 3rem;
+	font-weight: bold;
+}
+.calc {
+	position: relative;
+	display: block;
+	margin:8rem auto;
+	background-color: #DBD5CD;
+	height: 50vh;
+	width: 50vw;
+}
+.calc img{
+	position: absolute;
+	bottom:-3rem;
+	right:-2rem;
+	height: 20rem;
+	width: 16rem;
+}
+.rock-paper-scissors {
+	position: relative;
+	display: block;
+	margin:8rem auto;
+	background-color: #22BDFD;
+	height: 50vh;
+	width: 50vw;
+}
+.rock-paper-scissors img {
+	position: absolute;
+	bottom:-3rem;
+	right:-2rem;
+	height: 18rem;
+	width: 21rem;
+	border: 2px solid #FCF9F8;
+}
+.to-do {
+	position: relative;
+	display: block;
+	margin:8rem auto;
+	background-color: #F65F0F;
+	height: 50vh;
+	width: 50vw;
+}
+.to-do img{
+	height: 21rem;
+	width: 17rem;
+	position: absolute;
+	bottom:-3rem;
+	right:-2rem;
+}
+.projects a {
+	position: absolute;
+	color: white;
+	bottom: 1rem;
+	left: 1rem;
+}
+/* contact   */
+.contact {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.contact .btn-primary {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	color: grey;
+}
+.contact .btn:focus {
+	text-decoration-color: none;
+	outline: none;
+	box-shadow: none;
+}
+.contact .btn:hover {
+    transition: all 280ms ease-in-out;
+	letter-spacing: 3px;
+	border: 1px solid rgba(#fff, 0);
+}
+.contact-p {
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact .signature {
+	font-family: 'Mr Dafoe', cursive;
+	margin: auto;
+	font-size: 2rem;
+	letter-spacing: .5rem;
+}
+.contact .card-body {
+	height: 8vh;
+}
+.contact .social {
+	position: absolute;
+	left: 1rem;
+	top:0;
+}
+.social a {
+	color: grey;
+}

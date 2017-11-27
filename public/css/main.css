@@ -1,0 +1,106 @@
+* {
+	font-family: 'Muli', sans-serif;
+
+}
+body {
+	background: linear-gradient(-90deg, #EEEEEE, white);
+}
+
+/* Navigation Bar */
+.navbar {
+	background-color:;
+}
+.nav-item {
+	float:right;
+}
+.navbar-nav {
+	position: absolute;
+	right:0%;
+}
+
+/* test nav  */
+.test-nav .work {
+	position: absolute;
+	right:0;
+	top: 50vh;
+	transform: rotate(270deg);
+	color: grey;
+	text-decoration: none;
+	font-size: 2rem;
+}
+.test-nav .home {
+	position: absolute;
+	top: 0;
+	right: 50vw;
+	color: grey;
+	text-decoration: none;
+	font-size: 2rem;
+}
+.test-nav .about {
+	position: absolute;
+	left:0;
+	top: 50vh;
+	transform: rotate(90deg);
+	color: grey;
+	text-decoration: none;
+	font-size: 2rem;
+}
+.test-nav a:focus {
+	text-decoration-color: none;
+	outline: none;
+	box-shadow: none;
+}
+.test-nav a:hover {
+    transition: all 280ms ease-in-out;
+	letter-spacing: 3px;
+	border: 1px solid rgba(#fff, 0);
+}
+
+/*     main content area       */
+
+/* contact   */
+.contact {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.contact .btn-primary {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	color: grey;
+}
+.contact .btn:focus {
+	text-decoration-color: none;
+	outline: none;
+	box-shadow: none;
+}
+.contact .btn:hover {
+    transition: all 280ms ease-in-out;
+	letter-spacing: 3px;
+	border: 1px solid rgba(#fff, 0);
+}
+.contact-p {
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact .signature {
+	font-family: 'Mr Dafoe', cursive;
+	margin: auto;
+	font-size: 2rem;
+	letter-spacing: .5rem;
+}
+.contact .card-body {
+	height: 8vh;
+}
+.contact .social {
+	position: absolute;
+	left: 1rem;
+	top: 2.3rem;
+}
+.social a {
+	color: grey;
+}
+/* testing out the css loader */
+
+/* end test  */
