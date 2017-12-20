@@ -1,14 +1,33 @@
 * {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Roboto Slab', serif;
 
 }
-body {
-	background: linear-gradient(-90deg, #EEEEEE, white);
+body, html {
+	/*background: linear-gradient(-90deg, #EEEEEE, white);*/
+	height: 100%;
+}
+#app {
+	height: 100%;
+}
+/* testing out the css loader */
+.parallax {
+    /* The image used */
+    /*background-image: url("https://static.pexels.com/photos/165677/pexels-photo-165677.jpeg");*/
+	background-image: url('/img/background-img.jpeg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* end test  */
 /* Navigation Bar */
 .navbar {
-	background-color:;
+	background-color:transparent;
+	border: none;
 }
 .nav-item {
 	float:right;
@@ -17,58 +36,49 @@ body {
 	position: absolute;
 	right:0%;
 }
-
-/* test nav  */
-.test-nav .work {
-	position: absolute;
-	right:0;
-	top: 50vh;
-	transform: rotate(270deg);
-	color: grey;
-	text-decoration: none;
-	font-size: 2rem;
+.navbar-default .navbar-brand {
+	font-size:1.7rem;
+    color: white;
 }
-.test-nav .home {
-	position: absolute;
-	top: 0;
-	right: 50vw;
-	color: grey;
-	text-decoration: none;
-	font-size: 2rem;
+.navbar-default .navbar-nav {
+	margin-right: 1rem;
 }
-.test-nav .about {
-	position: absolute;
-	left:0;
-	top: 50vh;
-	transform: rotate(90deg);
-	color: grey;
-	text-decoration: none;
-	font-size: 2rem;
-}
-.test-nav a:focus {
-	text-decoration-color: none;
-	outline: none;
-	box-shadow: none;
-}
-.test-nav a:hover {
-    transition: all 280ms ease-in-out;
-	letter-spacing: 3px;
-	border: 1px solid rgba(#fff, 0);
+.navbar-default .navbar-nav li a {
+	font-size: 1.7rem;
+    color: white;
 }
 
 /*     main content area       */
+img {
+	width: 20rem;
+	height: auto;
+	width: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	top: 45%;
 
+}
 /* contact   */
 .contact {
-	position: absolute;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.contact:scroll {
+	color: black;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
 }
 .contact .btn-primary {
+	font-family: 'Muli', sans-serif;
+	font-size: 2rem;
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
-	color: grey;
+	color: white;
 }
 .contact .btn:focus {
 	text-decoration-color: none;
@@ -89,6 +99,7 @@ body {
 	margin: auto;
 	font-size: 2rem;
 	letter-spacing: .5rem;
+	color: white;
 }
 .contact .card-body {
 	height: 8vh;
@@ -99,8 +110,18 @@ body {
 	top: 2.3rem;
 }
 .social a {
-	color: grey;
+	color: white;
 }
-/* testing out the css loader */
-
-/* end test  */
+.spaces {
+	height: 60rem;
+}
+/***** Work Section  ****/
+.workHeader {
+	text-align: center;
+}
+.work {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
