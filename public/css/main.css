@@ -1,5 +1,5 @@
 * {
-	font-family: 'Roboto Slab', serif;
+	/*font-family: 'Roboto Slab', serif;*/
 
 }
 body, html {
@@ -16,6 +16,7 @@ body, html {
 	background-image: url('/img/background-img.jpeg');
     /* Full height */
     height: 100%;
+	width: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -27,29 +28,21 @@ body, html {
 /* Navigation Bar */
 .navbar {
 	background-color:transparent;
-	border: none;
 }
-.nav-item {
-	float:right;
+.navbar-brand {
+	color: white;
+	font-size: 1.3rem;
 }
 .navbar-nav {
 	position: absolute;
-	right:0%;
+	right: 2%;
 }
-.navbar-default .navbar-brand {
-	font-size:1.7rem;
-    color: white;
+.navbar-nav a {
+	color: white;
+	font-size: 1.3rem;
 }
-.navbar-default .navbar-nav {
-	margin-right: 1rem;
-}
-.navbar-default .navbar-nav li a {
-	font-size: 1.7rem;
-    color: white;
-}
-
 /*     main content area       */
-img {
+.centerLogo {
 	width: 20rem;
 	height: auto;
 	width: 200px;
@@ -60,68 +53,46 @@ img {
 
 }
 /* contact   */
-.contact {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-}
-.contact:scroll {
-	color: black;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-}
-.contact .btn-primary {
-	font-family: 'Muli', sans-serif;
-	font-size: 2rem;
-	background-color: rgba(0, 0, 0, 0);
-	border: none;
-	color: white;
-}
-.contact .btn:focus {
-	text-decoration-color: none;
-	outline: none;
-	box-shadow: none;
-}
-.contact .btn:hover {
-    transition: all 280ms ease-in-out;
-	letter-spacing: 3px;
-	border: 1px solid rgba(#fff, 0);
-}
-.contact-p {
-	margin-left: auto;
-	margin-right: auto;
-}
-.contact .signature {
-	font-family: 'Mr Dafoe', cursive;
-	margin: auto;
-	font-size: 2rem;
-	letter-spacing: .5rem;
-	color: white;
-}
-.contact .card-body {
-	height: 8vh;
-}
-.contact .social {
-	position: absolute;
-	left: 1rem;
-	top: 2.3rem;
-}
-.social a {
-	color: white;
-}
-.spaces {
-	height: 60rem;
-}
+
 /***** Work Section  ****/
+.work {
+	/*position: absolute;*/
+	/*text-align: center;*/
+	width: 100%;
+}
 .workHeader {
+
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.container {
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(auto);
+	grid-template-areas:
+		"c i"
+		"c i";
+}
+.projectImageSection {
+	/*background-color:#ABECF0;*/
+	position: relative;
+}
+.aboutProject h3{
+	color: #9DCAEB;
+}
+.projectTitle {
+	width:100%;
 	text-align: center;
 }
-.work {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+.peakChoiceImage {
+	position: absolute;
+	left: 10rem;
+	top: -10rem;
+	height: auto;
+	width: 28rem;
+}
+.linkToProject:hover {
+	transition: all 280ms ease-in-out;
+	letter-spacing: 5px;
 }
