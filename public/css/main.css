@@ -1,10 +1,19 @@
 * {
-	/*font-family: 'Roboto Slab', serif;*/
+/*font-family: 'Alegreya', serif;*/
+font-family: 'Roboto Slab', serif;
+/*font-family: 'Karla', sans-serif;*/
+/*font-family: 'Neuton', serif;*/
+/*font-family: 'Merriweather', serif;*/
+
+
 
 }
 body, html {
 	/*background: linear-gradient(-90deg, #EEEEEE, white);*/
 	height: 100%;
+}
+.space {
+	height: 2rem;
 }
 #app {
 	height: 100%;
@@ -61,7 +70,6 @@ body, html {
 	width: 100%;
 }
 .workHeader {
-
 	margin-top: 1rem;
 	margin-bottom: 2rem;
 }
@@ -81,6 +89,13 @@ body, html {
 .aboutProject h3{
 	color: #9DCAEB;
 }
+.aboutProject a {
+	color: #9DCAEB;
+}
+.aboutProject a:hover {
+	transition: all 280ms ease-in-out;
+	letter-spacing: 5px;
+}
 .projectTitle {
 	width:100%;
 	text-align: center;
@@ -95,4 +110,54 @@ body, html {
 .linkToProject:hover {
 	transition: all 280ms ease-in-out;
 	letter-spacing: 5px;
+}
+.iconSection {
+	display:grid;
+	grid-template-columns: repeat(6, 100px);
+}
+
+.iconSection h3 {
+	border-right: 2px solid black;
+	vertical-align: middle;
+	line-height: 3rem;
+
+}
+.iconSection img{
+	left: 0;
+	width: 9rem;
+	height: auto;
+}
+
+/****  ABOUT  ****/
+.about {
+	text-align: center;
+	/*background-color: #75C1B3;*/
+	background-color: #7AA7D7;
+	height: 45vh;
+	position: relative;
+}
+.aboutContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.about p {
+	position: absolute;
+	left:8rem;
+	color: white;
+	font-size: 1.5rem;
+	width:55vw;
+}
+.aboutHeader {
+	color: white;
+}
+.headshot {
+	/*border-radius: 50%;*/
+	height: auto;
+	width:19rem;
+	position: absolute;
+	bottom: 0;
+}
+/****  CONTACT  ****/
+.contact {
+	text-align: center;
 }
