@@ -1,16 +1,16 @@
 * {
 /*font-family: 'Alegreya', serif;*/
-font-family: 'Roboto Slab', serif;
-/*font-family: 'Karla', sans-serif;*/
-/*font-family: 'Neuton', serif;*/
+/*font-family: 'Roboto Slab', serif;*/
+font-family: 'Neuton', serif;
 /*font-family: 'Merriweather', serif;*/
-
-
-
 }
 body, html {
 	/*background: linear-gradient(-90deg, #EEEEEE, white);*/
 	height: 100%;
+}
+.line {
+	border: .1rem solid white;
+	width: 8vw;
 }
 .space {
 	height: 2rem;
@@ -88,13 +88,18 @@ body, html {
 }
 .aboutProject h3{
 	color: #9DCAEB;
+	font-size: 2.5rem;
 }
 .aboutProject a {
 	color: #9DCAEB;
 }
 .aboutProject a:hover {
+	text-decoration: none;
 	transition: all 280ms ease-in-out;
 	letter-spacing: 5px;
+}
+.aboutProject p {
+	font-size: 1.3rem;
 }
 .projectTitle {
 	width:100%;
@@ -117,6 +122,7 @@ body, html {
 }
 
 .iconSection h3 {
+	font-size: 2rem;
 	border-right: 2px solid black;
 	vertical-align: middle;
 	line-height: 3rem;
@@ -132,8 +138,8 @@ body, html {
 .about {
 	text-align: center;
 	/*background-color: #75C1B3;*/
-	background-color: #7AA7D7;
-	height: 45vh;
+	background-color: #6185A1;
+	height: 100%;
 	position: relative;
 }
 .aboutContainer {
@@ -141,23 +147,143 @@ body, html {
 	grid-template-columns: repeat(2, 1fr);
 }
 .about p {
+	margin: auto;
+	margin-top:1rem;
 	position: absolute;
-	left:8rem;
+	top: 0; left: 0; bottom: 0; right: 0;
+	top:4rem;
 	color: white;
 	font-size: 1.5rem;
-	width:55vw;
+	width:45vw;
 }
-.aboutHeader {
+.about h2 {
 	color: white;
 }
+										/*********** Mountain Animation ********/
+.animate {
+	position: absolute;
+	bottom: 0;
+	/*width: 100%;*/
+}
+/*.denverskyline {
+	position: absolute;
+	left:3rem;
+	top:0;
+	width: 25rem;
+	height: auto;
+}*/
+.mountains {
+  position: relative;
+  /*margin: 320px auto;*/
+  /*margin: 150px auto;*/
+  width: 800px;
+  /*width: 61%;*/
+  z-index: 3;
+}
+
+.li {
+  float: left;
+}
+
+.peak1 {
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid white;
+}
+
+.peak2 {
+	border-left: 150px solid transparent;
+	border-right: 175px solid transparent;
+	border-bottom: 150px solid white;
+  margin-left: -200px;
+  margin-top: 50px;
+}
+
+.peak3 {
+
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 200px solid white ;
+  	margin-left: -255px;
+
+}
+
+.sun {
+  animation: rise 20s ease-in-out 2s infinite Alternate both;
+  -webkit-animation: rise 10s ease-in-out 1s infinite Alternate both;
+  background: gold;
+  border-radius: 50%;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+@keyframes rise {
+  0% {
+    background: tomato;
+    opacity: 0;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    background: goldenrod;
+  }
+
+  55% {
+    background: golden;
+  }
+
+  100% {
+    transform: translateY(-350px);
+    -webkit-transform: translateY(-350px);
+  }
+}
+
+@-webkit-keyframes rise {
+  0% {
+    background: tomato;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    background: goldenrod;
+  }
+
+  55% {
+    background: golden;
+  }
+
+  100% {
+    transform: translateY(-350px);
+    -webkit-transform: translateY(-350px);
+  }
+}
+									/******** End of mountain animation **********/
+
+
 .headshot {
-	/*border-radius: 50%;*/
 	height: auto;
 	width:19rem;
 	position: absolute;
+	right: 5px;
 	bottom: 0;
 }
 /****  CONTACT  ****/
 .contact {
 	text-align: center;
+	/*background-color: #477594;*/
+}
+.contactContainer {
+	display: grid;
+  	grid-template-columns:repeat(3,1fr)
 }
