@@ -141,6 +141,7 @@ body, html {
 	background-color: #6185A1;
 	height: 100%;
 	position: relative;
+	z-index: 1;
 }
 .aboutContainer {
 	/*display: grid;
@@ -190,7 +191,7 @@ body, html {
   /*height: 100%;*/
   /*width: 61%;*/
   /*width: 100%;*/
-  z-index: 3;
+  z-index: 5;
   margin-bottom: -36%;
   /*height: auto;*/
 }
@@ -222,14 +223,15 @@ body, html {
   -webkit-animation: rise 10s ease-in-out 1s infinite Alternate both;
   background: gold;
   border-radius: 50%;
-  height: 20vh;
+  height: 50%;
   /*margin: 0 auto;*/
   width: 6vw;
   position: absolute;
-  bottom: 15%;
-  z-index: 2;
+  bottom: 20%;
+  z-index: -1;
   left: 30%;
 }
+
 @keyframes rise {
   0% {
     background: tomato;
