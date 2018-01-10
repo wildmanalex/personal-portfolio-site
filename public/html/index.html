@@ -4,35 +4,26 @@
     <script src="https://unpkg.com/vue"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> -->
 	<script src="https://use.fontawesome.com/8f5e0c9388.js"></script>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Karla|Neuton|Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 	<div id="app">
 		<div class="parallax">
-			<nav class="navbar navbar-expand-lg ">
-				<a class="navbar-brand" href="#">AW</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-item nav-link active" href="#">Work</a>
-						<a class="nav-item nav-link" href="#">About</a>
-						<a class="nav-item nav-link" href="#">Contact</a>
-					</div>
+			<nav class="navbar">
+		  		<a class="navbar-brand" href="#app">AW</a>
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="#work">Work</a>
+					<a class="nav-item nav-link" href="#about">About</a>
+					<a class="nav-item nav-link" href="#contact">Contact</a>
 				</div>
 			</nav>
 			<img src="/img/whitelogo-trans.png" class='centerLogo'>
 	</div>
-		<!--  *******work section********* -->
-		<div class="space"></div>
-
-	<div class="work">
+	
+	<div id="work">
 		<div class='projectTitle'>
 			<h2 class='workHeader'>Work</h2>
 		</div>
@@ -40,86 +31,80 @@
 		<div class="projectDivider"></div>
 		<div class="container">
 			<div class="aboutProject">
-					<h3><a href='http://peak-choice.com/#/'>Peak Choice</a></h3>
+					<h3><a href='http://peak-choice.com/#/'>Peak-Choice.com</a></h3>
 				<p class="projectDescription">
 					Peak Choice is an application that provides real-time data to make choosing where your next Colorado ski trip will be easier.</p>
-				<!-- <a href="http://peak-choice.com/#/" class='linkToProject'>Peak-Choice.com</a> -->
 				<h3>Built With</h3>
-				<!-- <div class="iconSection">
-					<img class="img1" src="img/htmllogo.png">
-					<img src="img/csslogo.png">
-					<img src='img/js.png'>
-					<img src="img/vue.png">
-
-				</div> -->
 			</div>
 			<div class="projectImageSection">
 					<img class='peakChoiceImage' src="/img/peakchoicemockup.png">
 			</div>
 		</div>
 		<div class="iconSection">
-			<img class="img1" src="img/htmllogo.png">
-			<img src="img/csslogo.png">
-			<img src='img/js.png'>
-			<img src="img/vue.png">
-			<i class="htmlIcon devicon-html5-plain-wordmark"></i>
-
-			<!-- <i class="devicon-bootstrap-plain-wordmark"></i> -->
+			<div><i class="icon devicon-html5-plain-wordmark"></i></div>
+			<div><i class="icon devicon-css3-plain-wordmark"></i></div>
+			<div><i class="icon devicon-javascript-plain"></i></div>
+			<div><i class="icon devicon-vuejs-plain-wordmark"></i></div>
+		</div>
+		<div class="space"></div>
+		<div class="projectDivider"></div>
+		<div class="container">
+			<div class="aboutProject">
+					<h3><a href='https://github.com/wildmanalex/hackathonv2'>Hot-Spots</a></h3>
+				<p class="projectDescription">
+					Hot-Spots is a travel application that utilizes Facebook's check-in data to display the most popular spots in an area. </p>
+				<h3>Built With</h3>
+			</div>
+			<div class="projectImageSection">
+					<img class='peakChoiceImage' src="/img/hotspotsmockup.png">
+			</div>
+		</div>
+		<div class="iconSection">
+			<div><i class="icon  devicon-html5-plain-wordmark"></i></div>
+			<div><i class="icon  devicon-css3-plain-wordmark"></i></div>
+			<div><i class="icon  devicon-javascript-plain"></i></div>
+			<div><i class="icon  devicon-jquery-plain-wordmark"></i></div>
 		</div>
 		<div class="space"></div>
 		<div class="projectDivider"></div>
 	</div>
-
 	<div class="space"></div>
 
-	<div class="about">
+	<div id="about">
 		<h2 class="aboutHeader">About</h2>
 		<hr class="line">
 		<div class="aboutContainer">
-			<!-- <div class="aboutFirstColumn"> -->
 				<p class="bio">Hi, I'm a software developer out of Colorado. I create high quality responsive websites and outstanding user experiences. You can get in touch with me <a href="#contact">here</a></p>
-			<!-- </div> -->
 			<div class="animate">
 				<div class='ul mountains'>
-					<!-- <img class='denverskyline' src="img/denverskyline.png"> -->
 					<div class='li peak1'></div>
 					<div class='li peak2'></div>
 					<div class='li peak3'></div>
 				</div>
 				<div class='sun'></div>
 			</div>
-			<!-- <div class="aboutSecondColumn"> -->
 				<img class="headshot" src="img/ccheadshotbw2.png">
-			<!-- </div> -->
 		</div>
 	</div>
 
-	<!-- <div class="space"></div> -->
 	<div id="contact">
 		<h2 class="contactHeader">Contact Me</h2>
-		<!-- <div class="space"></div> -->
 		<div class="contactContainer">
-			<!-- <h3> - available for freelance work - </h3> -->
 			<p>
 				If you're interested in collaborating, starting a new project together or just grabbing a coffee shoot me an email
 			</p>
 			<div class="emailContainer">
-				<!-- <hr class="line2"> -->
 				<p class="emailLink">Alex Wildman<br /><a href="mailto:alexj.wildman@yahoo.com" target="_top" class="email">alexj.wildman@yahoo.com</a></p>
-				<!-- <hr class="line2"> -->
 			</div>
-
 			<div class="space2"></div>
 			<div class="socialContainer">
 				<a href="https://github.com/wildmanalex"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-				<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-				<i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+				<a href="https://www.linkedin.com/in/alex-wildman/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+				<a href="https://medium.com/@wildmanalex"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
 			</div>
 			<div class="space2"></div>
-
 		</div>
 		<div class="space2"></div>
-
 	</div>
 
 </div>
