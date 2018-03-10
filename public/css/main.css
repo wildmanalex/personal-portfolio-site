@@ -317,6 +317,14 @@ body, html {
 	color: white;
 	letter-spacing: .05rem;
 }
+.contactContainer .resume {
+	color: #9DCAEB;
+	font-size: 2rem;
+	text-decoration: none;
+}
+.contactContainer .resume:hover {
+	color: white;
+}
 .space2 {
 	height: 1rem;
 	background-color: #4b4c51;
